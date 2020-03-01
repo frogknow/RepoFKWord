@@ -1,0 +1,27 @@
+<style>
+	<name>blod</>
+	<type>0</>
+	<id></>
+	<val></>
+</>
+
+<style>
+	<name>highlight</>
+	<type>1</>
+	<id></>
+	<val></>
+</>
+
+<style>
+	<name>size</>
+	<type>2</>
+	<id></>
+	<val></>
+</>
+
+<style>
+	<name>color</>
+	<type>3</>
+	<id></>
+	<val></>
+</>
