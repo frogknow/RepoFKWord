@@ -1,0 +1,186 @@
+=================
+1, Login to github, create a repository named "RepoFKWord"(Because the unnecessary step of adding Readme.md, causes many problems);
+2, On window, Open GitBash, move to local source dir;
+3, excute "git remote add origin https://github.com/frogknow/RepoFKWord";
+4, excute "git push -u origin master", type in username and password, failed;
+5, excute "git fetch", failed;
+6, excute "git pull https://github.com/frogknow/RepoFKWord", write some log;
+7, excute "git remote add origin https://github.com/frogknow/RepoFKWord", succed.
+
+See the operate log below, it's all the screen show of Gitbash command line.
+==================
+
+Administrator@USER-QITC52TT2S MINGW64 /e/VM/myCode/FKWord (master)
+$ git remote add origin https://github.com/frogknow/RepoFKWord
+
+Administrator@USER-QITC52TT2S MINGW64 /e/VM/myCode/FKWord (master)
+$ git push -u origin master
+error: unable to read askpass response from 'D:/Program/Git/mingw64/libexec/git-                                                                        core/git-gui--askpass'
+Password for 'https://yuyz1990@github.com':
+
+Administrator@USER-QITC52TT2S MINGW64 /e/VM/myCode/FKWord (master)
+$ git push -u origin master
+To https://github.com/frogknow/RepoFKWord
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/frogknow/RepoFKWord'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Administrator@USER-QITC52TT2S MINGW64 /e/VM/myCode/FKWord (master)
+$
+
+
+Administrator@USER-QITC52TT2S MINGW64 /e/VM/myCode/FKWord (master)
+$
+
+Administrator@USER-QITC52TT2S MINGW64 /e/VM/myCode/FKWord (master)
+$ git info
+git: 'info' is not a git command. See 'git --help'.
+
+Did you mean one of these?
+        init
+        mailinfo
+
+Administrator@USER-QITC52TT2S MINGW64 /e/VM/myCode/FKWord (master)
+$
+
+
+Administrator@USER-QITC52TT2S MINGW64 /e/VM/myCode/FKWord (master)
+$
+
+Administrator@USER-QITC52TT2S MINGW64 /e/VM/myCode/FKWord (master)
+$ git remote add origin https://github.com/frogknow/RepoFKWord.git
+fatal: remote origin already exists.
+
+Administrator@USER-QITC52TT2S MINGW64 /e/VM/myCode/FKWord (master)
+$ git remote -v
+origin  https://github.com/frogknow/RepoFKWord (fetch)
+origin  https://github.com/frogknow/RepoFKWord (push)
+
+Administrator@USER-QITC52TT2S MINGW64 /e/VM/myCode/FKWord (master)
+$ git remote origin
+error: Unknown subcommand: origin
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+Administrator@USER-QITC52TT2S MINGW64 /e/VM/myCode/FKWord (master)
+$
+
+
+Administrator@USER-QITC52TT2S MINGW64 /e/VM/myCode/FKWord (master)
+$
+
+
+Administrator@USER-QITC52TT2S MINGW64 /e/VM/myCode/FKWord (master)
+$
+
+Administrator@USER-QITC52TT2S MINGW64 /e/VM/myCode/FKWord (master)
+$ git push -u origin master
+To https://github.com/frogknow/RepoFKWord
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/frogknow/RepoFKWord'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Administrator@USER-QITC52TT2S MINGW64 /e/VM/myCode/FKWord (master)
+$ git fetch
+warning: no common commits
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/frogknow/RepoFKWord
+ * [new branch]      master     -> origin/master
+
+Administrator@USER-QITC52TT2S MINGW64 /e/VM/myCode/FKWord (master)
+$ ls
+doc/  source/
+
+Administrator@USER-QITC52TT2S MINGW64 /e/VM/myCode/FKWord (master)
+$ ls source/
+common/     dbapi.h    DbMgr.h         FKWordBook.h    main.cpp  NetWord.cpp   StyleMgr.h  types.h       WordAttr.cpp   WordGroup.h    Youdao.cpp
+cppdbg11.h  dbgc/      etc/            FKWordConf.cpp  main.h    NetWord.h     Trace.cpp   WdGrpMgr.cpp  WordAttr.h     WordLearn.cpp  Youdao.h
+dbapi.cpp   DbMgr.cpp  FKWordBook.cpp  FKWordConf.h    Makefile  StyleMgr.cpp  Trace.h     WdGrpMgr.h    WordGroup.cpp  WordLearn.h
+
+Administrator@USER-QITC52TT2S MINGW64 /e/VM/myCode/FKWord (master)
+$
+
+
+Administrator@USER-QITC52TT2S MINGW64 /e/VM/myCode/FKWord (master)
+$
+
+Administrator@USER-QITC52TT2S MINGW64 /e/VM/myCode/FKWord (master)
+$ git push -u origin master
+To https://github.com/frogknow/RepoFKWord
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/frogknow/RepoFKWord'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Administrator@USER-QITC52TT2S MINGW64 /e/VM/myCode/FKWord (master)
+$ git up
+git: 'up' is not a git command. See 'git --help'.
+
+Did you mean one of these?
+        pull
+        push
+
+Administrator@USER-QITC52TT2S MINGW64 /e/VM/myCode/FKWord (master)
+$ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+
+Administrator@USER-QITC52TT2S MINGW64 /e/VM/myCode/FKWord (master)
+$ git pull  https://github.com/frogknow/RepoFKWord
+From https://github.com/frogknow/RepoFKWord
+ * branch            HEAD       -> FETCH_HEAD
+Merge made by the 'recursive' strategy.
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 README.md
+
+Administrator@USER-QITC52TT2S MINGW64 /e/VM/myCode/FKWord (master)
+$
+
+Administrator@USER-QITC52TT2S MINGW64 /e/VM/myCode/FKWord (master)
+$ git push -u origin master
+Counting objects: 47, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (43/43), done.
+Writing objects: 100% (47/47), 3.25 MiB | 90.00 KiB/s, done.
+Total 47 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), done.
+To https://github.com/frogknow/RepoFKWord
+   97afde9..5f11362  master -> master
+Branch master set up to track remote branch master from origin.
+
+Administrator@USER-QITC52TT2S MINGW64 /e/VM/myCode/FKWord (master)
