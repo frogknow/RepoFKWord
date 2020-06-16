@@ -1,7 +1,7 @@
 #ifndef __FKWordBook_H__
 #define __FKWordBook_H__
 
-#include<algorithm>
+#include <algorithm>
 #include <initializer_list>
 #include "cppdbg11.h"
 

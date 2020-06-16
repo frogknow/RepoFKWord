@@ -21,7 +21,7 @@
 #include <stack>
 //#include <priority_queue> // no such header file.
 
-#include "cppdbg11.h"
+#include "baseinc.h"
 #include "cmnutil.h"
 
 #include "tinyxml.h"
@@ -92,15 +92,7 @@ bool YoudaoWb::LoadXml(ConstStr& fxml)
 
 			string text(wordattr->FirstChild()->Value());
 
-			outd(wordattr->Value(), text);
-
-			qDebug() 
-//				<< CodePosInfo 
-//				<< wordattr->Value() 
-				<< text.c_str()
-				<< endl;
-
-			outd(text.c_str());
+			QDBG(wordattr->Value() << text.c_str());
 
 			if(IsSame("word", wordattr->Value())) {
 				ydword.mWord = text;

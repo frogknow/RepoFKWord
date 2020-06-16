@@ -87,7 +87,7 @@ SOURCES += \
 
 
 HEADERS += \
-        src/base/cppdbg11.cpp \
+        src/base/baseinc.h \
         src/base/StyleMgr.h \
         src/base/types.h \
         src/base/WdGrpMgr.h \
@@ -124,13 +124,14 @@ HEADERS += \
 #---------------------------------------------------
 SOURCES += \
 #        src/dbgc/dbgc.cpp \
-        src/dbgc/DbgComm.cpp \
+        src/dbgc/DbgCmn.cpp \
         src/dbgc/DbgServer.cpp \
         src/dbgc/Trace.cpp \
+        src/dbgc/cppdbg11.cpp \
 
 
 HEADERS += \
-        src/dbgc/DbgComm.h \
+        src/dbgc/DbgCmn.h \
         src/dbgc/DbgServer.h \
         src/dbgc/Trace.h \
 
@@ -165,7 +166,7 @@ HEADERS += \
         src/fknow/FKWordBook.h \
         src/fknow/FKWordConf.h \
         src/fknow/NetWord.h \
-        src/fknow/WordLean.h \
+        src/fknow/WordLearn.h \
 
 
 

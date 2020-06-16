@@ -25,8 +25,7 @@
 #include "cppdbg11.h"
 
 
-
-MoRet WordBookMgr::load(cstring& path)
+MoRet WordBookMgr::load(ConstStr& path)
 {
 	FKWordBook wbook(path);
 #if 0
@@ -60,16 +59,6 @@ MoRet WordBookMgr::load(void)
 
 	return MO_OK;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
